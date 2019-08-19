@@ -1,0 +1,23 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception{
+	
+	Scanner scan = new Scanner (System.in);
+	System.out.println("How much pink lemonade would you like?");
+	int amount = scan.nextInt();
+	if(amount < 0){
+	System.out.println("you cant buy that much");
+	}
+	else if (amount==0){
+	System.out.println("that will be $0");
+	}
+	else {
+		System.out.println("that will be " + ( 2 * amount) + " dollars");
+	}
+	}
+}
